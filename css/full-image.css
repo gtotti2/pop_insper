@@ -115,7 +115,7 @@
 	src: url('webfonts/Prelo-SemiBold.eot');
 	src: url('webfonts/Prelo-SemiBold.eot?#iefix') format('embedded-opentype'),
 		url('webfonts/Prelo-SemiBold.woff') format('woff'),
-		url('webfontson-SemiBold.ttf')  format('truetype');
+		url('webfonts/Prelo-SemiBold.ttf')  format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -191,7 +191,7 @@ div.row:not(:first-of-type) {display: none;}
 
 /* MENU */
 .main-nav {z-index: 1;width: 100%;}
-.main-nav li.menu-btn{list-style:none;float: left;box-sizing: border-box;width:34%;position: relative;display: block;}
+.main-nav li.menu-btn{list-style:none;box-sizing: border-box;width:34%;position: relative;display: block;margin: 0 auto;}
 .main-nav li.active{background: white;}
 .main-nav li a.nav-item{text-transform: lowercase;text-decoration: none;font-size: 3vw;text-align:center;margin:30% auto 0%;padding:5%;color: #000000;display:block;line-height: .8em;}
 .main-nav li.active a.nav-item{margin:15% auto 20%;}
