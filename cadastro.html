@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Painel de Oportunidades Profissionais</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-image.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu_elastic.css" />
+	<script src="js/snap.svg-min.js"></script>
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Page Content -->
+<div class="bo"> 
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="index.html">home</a>
+				<a href="painel.html">painel de oportunidades</a>
+				<a href="cadastro.html">cadastro de currículo</a>
+				<a href="javascript:history.go(-1)">voltar</a>
+			</div>
+		</nav>
+		<button class="close-button" id="close-button">Close Menu</button>
+		<div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+				<path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+			</svg>
+		</div>
+	</div>
+	<button class="menu-button" id="open-button">Open Menu</button>
+	<div class="content-wrap">
+		<div class="row">
+			<section id="cadastro">
+				<div class="container">
+		    		<h2>cadastro <span>de</span> currículos</h2> 
+	    			<ul id="progressbar">
+						<li data-tab="tab-1" class="current">Dados Cadastrais</li>
+						<li data-tab="tab-2">Informações Gerais</li>
+						<li data-tab="tab-3">Histórico Acadêmico</li>
+						<li data-tab="tab-4">Info Profissionais</li>
+						<li data-tab="tab-5">Responsabilidades</li>
+						<li data-tab="tab-6">Atividades e Interesses</li>
+					</ul>
+					<span class="normalize"></span>
+					<fieldset id="tab-1" class="tab-content current">
+						<input type="text" name="nome" placeholder="Nome" />
+						<input type="text" name="nome" placeholder="Nome" />
+						<input type="text" name="nome" placeholder="Nome" />
+						<input type="text" name="nome" placeholder="Nome" />
+						<input type="button" name="next" class="next action-button" value="Próximo" />
+					</fieldset>
+					<fieldset id="tab-2" class="tab-content">
+						<input type="text" name="nome" placeholder="Nome" />
+						<input type="text" name="email" placeholder="Email" />
+						<input type="password" name="pass" placeholder="Password" />
+						<input type="button" name="next" class="next action-button" value="Próximo" />
+					</fieldset>
+					<fieldset id="tab-3" class="tab-content">
+						<input type="text" name="email" placeholder="Email" />
+						<input type="password" name="pass" placeholder="Password" />
+						<input type="password" name="cpass" placeholder="Confirm Password" />
+						<input type="button" name="next" class="next action-button" value="Próximo" />
+					</fieldset>
+					<fieldset id="tab-4" class="tab-content">
+						<input type="text" name="email" placeholder="Email" />
+						<input type="password" name="pass" placeholder="Password" />
+						<input type="password" name="cpass" placeholder="Confirm Password" />
+						<input type="button" name="next" class="next action-button" value="Próximo" />
+					</fieldset>
+					<fieldset id="tab-5" class="tab-content">
+						<input type="text" name="email" placeholder="Email" />
+						<input type="password" name="pass" placeholder="Password" />
+						<input type="password" name="cpass" placeholder="Confirm Password" />
+						<input type="button" name="next" class="next action-button" value="Próximo" />
+					</fieldset>
+					<fieldset id="tab-6" class="tab-content">
+						<input type="text" name="email" placeholder="Email" />
+						<input type="password" name="pass" placeholder="Password" />
+						<input type="password" name="cpass" placeholder="Confirm Password" />
+						<input type="button" name="submit" class="next action-button" value="Próximo" />
+					</fieldset>
+			    </div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="logo"><h1>Logo Insper</h1></div>
+</body> 
+   <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+		$( ".hover" ).hover(function() {
+			$( this ).toggleClass( "active" );
+			});
+
+		//jQuery time
+var current_fs, next_fs;//fieldsets
+
+$(".next").click(function(){
+	
+	// current_fs = $(this).parent();
+	// next_fs = $(this).parent().next();
+	
+	// //activate next step on progressbar using the index of next_fs
+	// $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("current");
+	// $("#progressbar li").eq($("fieldset").index(next_fs)).prev().addClass("valid");
+	// $("#progressbar li").eq($("fieldset").index(next_fs)).prevAll().removeClass("current");
+	
+
+
+	
+	
+	// //hide the current fieldset
+	
+	// //show the next fieldset
+	// next_fs.addClass('current');
+	// next_fs.scrollTop('0');
+	// current_fs.removeClass('current');
+	if($(this).hasClass('valid')){ 
+		nextFieldset($(this).parent());
+		
+	} else { 
+		
+		var vazios = $(this).siblings().filter(function() {
+            return !this.value;
+            }).get();
+
+		var vaziosPosition = $(this).siblings().filter(function() {
+            return !this.value;
+            }).position().top;
+
+		console.log(vaziosPosition);
+
+		
+		if(vazios.length) { 
+			$('.current').animate({scrollTop:vaziosPosition}, '1000');
+			$(vazios).addClass("error");
+			$(vazios).first().focus();
+			$(vazios).attr('placeholder','Você precisa preencher esse campo'); 
+		}
+		
+	}
+
+});
+
+
+
+
+function nextFieldset(target) { 
+
+	current_fs = target;
+	next_fs = target.next();
+	
+
+
+	//activate next step on progressbar using the index of next_fs
+	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("current");
+	$("#progressbar li").eq($("fieldset").index(next_fs)).prev().addClass("valid");
+	$("#progressbar li").eq($("fieldset").index(next_fs)).prevAll().removeClass("current");
+	
+
+
+	
+	
+	//hide the current fieldset
+		next_fs.addClass('current');
+		next_fs.scrollTop('0');
+		current_fs.removeClass('current');
+
+	//show the next fieldset
+	
+
+}
+
+
+
+$(document).ready(function(){
+
+
+
+
+		$('#progressbar li').click(function(){
+			var tab_id = $(this).attr('data-tab');
+		
+		if($(this).hasClass('valid')){
+			$('.tab-content').removeClass('current');
+			$(this).addClass('current').siblings("li").removeClass('current');
+			$("#"+tab_id).addClass('current');
+			
+		}
+	})		
+});
+
+
+
+
+
+		$('fieldset.tab-content').each(function(){ 
+			$(this).children('input').each(function( i ) {
+				$(this).keydown(function(e){
+					if (e.keyCode == 9) { 
+						e.preventDefault();
+					}
+						if (e.keyCode == 13 || e.keyCode == 9) {
+		    				var campos = $(this).val();
+		    				if(campos != "") { 
+
+							var nextInput = $(this).outerHeight( true ) * (i + 1);
+							//console.log(nextInput)
+
+		    				
+		    		$(this).removeClass("error");
+		    		$(this).removeAttr('placeholder','Você precisa preencher esse campo');
+		    		$(this).addClass('valid');
+		    		$(this).nextAll().removeAttr('disabled','true');
+		    		$('.current').delay('slow').animate({scrollTop: nextInput}, 900);
+
+		    		if($('.current').children('input:button').prev().hasClass('valid')) { 
+		    			//console.log($(this));
+		    			$(this).next().addClass('valid');
+		    		}
+
+
+		    		
+
+				if ($(this).hasClass("released")) {
+				  nextFieldset($(this).parent());
+
+				} else if ( $( e.currentTarget ).is( ":button" )  && $(this).hasClass("valid") ) {
+				  e.preventDefault();
+				  nextFieldset($(this).parent());
+				  $(this).removeClass('valid');
+				} else {
+				  e.preventDefault();
+				  //console.log($(this));
+				}
+
+				
+				$(this).next().focus();
+
+				// if($('.next').hasClass('valid')){
+				// 	 setTimeout(nextFieldset($(this).parent()), 10000);
+					
+					
+				// } else { 
+				// 	e.preventDefault();
+				// 	$(this).next().focus();
+				// }
+
+		
+				
+
+		    		
+		    	} else { 
+		    		$(this).addClass("error");
+		    		$(this).attr('placeholder','Você precisa preencher esse campo');
+		    		$(this).nextAll().attr('disabled','true');
+		    		  }
+		    } 
+		});
+	});
+});
+
+
+    				
+	
+	
+
+</script>
+</body>
+</html>
